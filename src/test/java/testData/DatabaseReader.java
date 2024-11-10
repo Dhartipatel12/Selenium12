@@ -8,7 +8,7 @@ public class DatabaseReader {
     }
 
     public void databaseConnection() throws SQLException {
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hr", "Test1","");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/hr", "root","");
         if(connection.isClosed()){
             System.out.println("Not connected to the Database");
         }
